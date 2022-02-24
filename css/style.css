@@ -1,0 +1,229 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+    background-color: gray;
+}
+
+/*classi speciali*/
+
+
+/*inizio header*/
+
+#header_site{
+    height: 100%
+    width: 100%;
+}
+
+.menu-dx{
+    height: 47px;
+    width: 50%;
+    float: left;
+    background-color: aqua;
+}
+.menu-sx{
+    height: 47px;
+    width: 50%;
+    float: left;
+    background-color: brown;
+}
+
+/*fine header*/
+
+
+
+.banner{
+    height: 437px;
+    width: 100%;
+    background-color: coral;
+    margin-bottom: 50px; /* provvisori */
+}
+
+.choise{
+    height: 756px;
+
+    margin-bottom: 28px;
+}
+
+.find-plan{
+    height: 83px;
+    width: 100%;
+    background-color: cyan;
+    margin-bottom: 16px;
+}
+
+.plan-choise{
+    height: 628px;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+.personal-choise, .standard-choise, .advanced-choise{
+    height: 628px;
+    width: 30%;
+    float: left;
+    background-color: green;
+    margin-right: 5%;
+}
+
+.advanced-choise{
+    margin-right: 0;
+}
+
+/*fine section choise*/
+
+.enterprise{
+    height: 494px;
+    margin-bottom: 64px;
+}
+
+.cta-contact-us{
+     height: 106px;
+     background-color: pink;
+     margin-bottom: 90px;
+}
+.contact-us{
+    height: 298px;
+    width: 100%;
+}
+
+.img-contact{
+    width: 55%;
+    float: left;
+    height: 298px;
+    background-color: darkred;
+}
+.text-contact{
+    float: left;
+    width: 45%;
+    height: 298px;
+    background-color: aqua;
+}
+
+/*fine sesseione enterprise*/
+
+.tools{
+    height: 705px;
+    margin-bottom: 114px;
+}
+
+.text-tools{
+    height: 31px;
+    width: 100%;
+    background-color: chartreuse;
+    margin-bottom: 31px;
+}
+
+.grid-tools{
+    height: 643px;
+    width: 100%;
+    background-color: aquamarine;
+    
+}
+
+.card-tools{
+    float: left;
+    height: 290px;
+    width: 30%;
+    margin-bottom: 63px;
+    background-color: brown;
+    margin-right: 5%;
+}
+
+.card-tools:nth-child(3){
+    margin-right: 0;
+}
+.card-tools:nth-child(6){
+    margin-right: 0;
+}
+
+/*fine sessione tools*/
+
+.users{
+    height: 619px;
+    width: 100%;
+    background-color: grey;
+    margin-bottom: 77px;
+}
+
+.text-users{
+    height: 60px;
+    background-color: chartreuse;
+}
+.underline-users{
+    height: 60px;
+    background-color: rgb(184, 3, 145);
+}
+.grid-users{
+    height: 285px;
+}
+.colomn{
+    height: 288px;
+    width: 33.333%;
+    float: left;
+    background-color: coral;
+}
+
+.small-users{
+    float: left;
+    width: 50%;
+    height: 144px;
+}
+
+.cta-users{
+    height: 214px;
+    width: 100%;
+    background-color: cornsilk;
+}
+/*da poter cancellare*/
+.small-users:nth-child(1){
+    background-color: aqua;
+}
+.small-users:nth-child(2){
+    background-color: crimson;
+}
+.small-users:nth-child(3){
+    background-color: rgb(255, 230, 0);
+}
+.small-users:nth-child(4){
+    background-color: darkgreen;
+}
+
+/*fine section users*/
+
+.faq{
+    height: 100%;
+    margin-bottom: 75px;
+}
+.text-faq{
+    height: 23px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: chartreuse;
+}
+.esample-faq{
+    height: 219px;
+    background-color: coral;
+}
+
+/*fine del main*/
+#footer_site{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+.footer-voice{
+    margin-bottom: 60px;
+    padding-top: 60px;
+    height: 110px;
+    background-color: crimson;
+}
+.lenguage{
+    height: 64px;
+
+}
