@@ -5,26 +5,25 @@ body{
     width: 1440Px;
     margin: 0 auto;
 }
-
 .container{
     width: 947px;
     margin: 0 auto;
     
 }
-
 :root{
     --banner:#B4D0E7;
     --p: #09968D;
     --button:#0061FF;
     --img:#6E7831;
 }
-
-.clearfix{
+.clearfix::after{
     content: "";
   clear: both;
   display: table;
 }
+
 /*classi speciali*/
+
 
 
 /*inizio header*/
@@ -83,9 +82,6 @@ li{
 }
 
 /*fine header*/
-
-
-
 
 
 
@@ -155,40 +151,21 @@ a.cta-dropbox{
 
 /*fine banner section*/
 
+
+
 /*inizio choise section*/
 
-
+#choise{
+    margin-bottom: 46px;
+}
 .find-plan>h2{
     font-size: 30px;
 }
-.find-plan{
-    margin-bottom: 34px;
-}
-
-
 .usage-choise{
     text-align: center;
     line-height: 40px;
     border-bottom: 1px solid grey;
 }
-.choise img{
-    width: 20px;
-    text-align: center;
-}
-.usage-choise>span{
-    vertical-align: super;
-}
-
-.plan-choise hr{
-    width: 20%;
-}
-
-.plan-choise .check{
-    color: #0061FF;
-    font-weight: bold;
-}
-
-
 .personal-choise, .standard-choise, .advanced-choise{
     height: 990px;
     width: 230px;
@@ -197,27 +174,71 @@ a.cta-dropbox{
     padding: 0 27px;
     border: 1px solid grey;
 }
-
 .advanced-choise{
     margin-right: 0;
 }
-
 .personal-choise .cta-dropbox{
     margin: 10px;
     padding: 5px 15px;
 }
-
 .standard-choise .cta-dropbox{
     margin: 10px;
     padding: 5px 15px;
 }
-
 .advanced-choise .cta-dropbox{
     margin: 10px;
     padding: 5px 15px;
 }
+.choise img{
+    width: 20px;
+    text-align: center;
+}
+.usage-choise>span{
+    vertical-align: super;
+}
+.plan-choise hr{
+    width: 20%;
+}
+.plan-choise .check{
+    color: #0061FF;
+    font-weight: bold;
+}
+/*fine choise section*/
 
-/*fine section choise*/
+
+
+/*inizio enterprise section*/
+
+.team-cta{
+    margin-bottom: 274px;
+    width: 100%;
+}
+.team-enterprise{
+    text-align: center;
+    border: 0.5px solid grey;
+}
+
+#float-right{
+    float: right;
+}
+.enterprise-cta{
+    border-bottom: 0.5px solid grey;
+    border-left: 0.5px solid grey;
+    border-right: 0.5px solid grey;;
+}
+.enterprise-cta>.cta-dropbox{
+    color: white;
+    padding: 5px ;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: var(--button);
+    margin-right: 20px;
+}
+
+.team-cta img{
+    width: 20px;
+}
+
 
 .enterprise{
     height: 494px;
