@@ -7,16 +7,22 @@ body{
 }
 
 .container{
-    width: 70%;
+    width: 962px;
     margin: 0 auto;
     background-color: gray;
 }
 
 :root{
-    --h2:#B4D0E7;
+    --banner:#B4D0E7;
     --p: #09968D;
     --button:#0061FF;
     --img:#6E7831;
+}
+
+.clearfix{
+    content: "";
+  clear: both;
+  display: table;
 }
 /*classi speciali*/
 
@@ -76,111 +82,99 @@ li{
     margin-top: 15px;
 }
 
-
-
 /*fine header*/
 
 
-/*inizio banner*/
+
+
+
+
+/*inizio banner section*/
 
 .banner{
     height: 664px;
     width: 100%;
     margin: 0 auto;
-    background-color: coral;
-    margin-bottom: 135px;
+    background-color:var(--banner);
+    margin-bottom: 185px;
 }
 .banner-contain{
     width: 85%;
     margin: 0 auto;
 }
-
 .h2-banner{
-    padding-top: 57px;
+    padding-top: 92px;
     width: 100%;
-    height: 116px;
-    background-color: var(--h2);
-    margin-bottom: 24px;
-    font-size: 24px;
+    margin-bottom: 52px;
+    font-size: 60px;
+    font-weight: bold;
     letter-spacing: 2px;
-    word-spacing: 5px
+    word-spacing: 7px
 }
-
 .banner-sx{
     float: left;
-    width: 40%;
+    width: 35%;
+}
+.p-description-banner{
+    margin-bottom: 30px;
+}
+.buttn-banner{
+    height: 35px;
+    width: 209px;
+    background-color: var(--button);
+    line-height: 35px;
+}
+a.cta-dropbox{
+    color: white;
+    padding: 0 18px;
+    text-decoration: none;
+}
+.disclamer-banner{
+    margin-bottom: 20px;
+}
+.arrow-banner>a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 34px;
 }
 .banner-dx{
     float: left;
-    width: 60%;
-}
-.p-description-banner{
-    width: 100%;
-    height: 70px;
-    margin-bottom: 14px;
-    background-color: var(--p);
-}
-
-.buttn-banner{
-    height: 23px;
-    width: 70%;
-}
-
-.buttn-banner button{
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    letter-spacing: 2px;
-    word-spacing: 5px;
-    text-decoration: none;
-    font-size: 10px;
-    padding: auto 0;
-    background-color: var(--button);
-    border: none;
-}
-.buttn-banner a{
-    text-decoration: none;
-    color: white;
-}
-
-.link-banner{
-    height: 23px;
     width: 65%;
-    background-color: var(--p);
-    margin-bottom: 20px;
 }
-.arrow-banner{
-    height: 22px;
-    width: 10%;
-    background-color: var(--p);
-}
-
 .img-banner{
     width: 100%;
-    height: 281px;
-    background-color: var(--img);
 }
 .img-banner img{
-    width: 70%;
+    width: 100%;
     display:block;
       margin:0px auto;
       text-align:center;
 }
 
-/*fine banner*/
+/*fine banner section*/
+
+/*inizio choise section*/
 
 .choise{
     height: 756px;
-
-    margin-bottom: 28px;
 }
-
+.find-plan>h2{
+    font-size: 30px;
+}
 .find-plan{
-    height: 83px;
-    width: 100%;
-    background-color: cyan;
-    margin-bottom: 16px;
+    margin-bottom: 34px;
 }
+
+
+.usage-choise{
+    text-align: center;
+}
+.usage-choise>img{
+    width: 20px;
+    text-align: center;
+}
+
 
 .plan-choise{
     height: 628px;
