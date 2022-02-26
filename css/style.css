@@ -153,20 +153,20 @@ a.cta-dropbox{
 
 
 
-/*inizio choise section*/
+/*inizio choice section*/
 
-#choise{
+#choice{
     margin-bottom: 46px;
 }
 .find-plan>h2{
     font-size: 30px;
 }
-.usage-choise{
+.usage-choice{
     text-align: center;
     line-height: 40px;
     border-bottom: 1px solid grey;
 }
-.personal-choise, .standard-choise, .advanced-choise{
+.personal-choice, .standard-choice, .advanced-choice{
     height: 990px;
     width: 230px;
     float: left;
@@ -174,40 +174,42 @@ a.cta-dropbox{
     padding: 0 27px;
     border: 1px solid grey;
 }
-.advanced-choise{
+.advanced-choice{
     margin-right: 0;
 }
-.personal-choise .cta-dropbox{
+.personal-choice .cta-dropbox{
     margin: 10px;
     padding: 5px 15px;
 }
-.standard-choise .cta-dropbox{
+.standard-choice .cta-dropbox{
     margin: 10px;
     padding: 5px 15px;
 }
-.advanced-choise .cta-dropbox{
+.advanced-choice .cta-dropbox{
     margin: 10px;
     padding: 5px 15px;
 }
-.choise img{
+.choice img{
     width: 20px;
     text-align: center;
 }
-.usage-choise>span{
+.usage-choice>span{
     vertical-align: super;
 }
-.plan-choise hr{
+.plan-choice hr{
     width: 20%;
 }
-.plan-choise .check{
+.plan-choice .check{
     color: #0061FF;
     font-weight: bold;
 }
-/*fine choise section*/
+
+/*fine choice section*/
 
 
 
 /*inizio enterprise section*/
+
 #enterprise{
     padding-bottom: 105px;
 }
@@ -253,17 +255,14 @@ a.cta-dropbox{
     float: left;
     width: 45%;
 }
-
 .text-contact>h2{
     margin: 42px 0 33px 50px;
 }
-
 .text-contact>p{
     margin-left: 50px;
     margin-bottom: 30px;
 
 }
-
 .text-contact>.partner-cta{
     margin-left: 50px;
     padding: 5px 0 5px 0;
@@ -274,34 +273,25 @@ a.cta-dropbox{
 
 /*fine sesseione enterprise*/
 
+
+
+/*inizio sessione tools*/
+
 .tools{
-    height: 705px;
-    margin-bottom: 114px;
+    margin-bottom: 180px;
 }
-
 .text-tools{
-    height: 31px;
-    width: 100%;
-    background-color: chartreuse;
-    margin-bottom: 31px;
+    margin-bottom: 33px;
 }
-
-.grid-tools{
-    height: 643px;
-    width: 100%;
-    background-color: aquamarine;
-    
-}
-
 .card-tools{
     float: left;
-    height: 290px;
     width: 30%;
     margin-bottom: 63px;
-    background-color: brown;
     margin-right: 5%;
 }
-
+.card-tools>img{
+    width: 100%;
+}
 .card-tools:nth-child(3){
     margin-right: 0;
 }
@@ -310,6 +300,10 @@ a.cta-dropbox{
 }
 
 /*fine sessione tools*/
+
+
+
+/*inizio sessione users*/
 
 .users{
     height: 619px;
