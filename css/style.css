@@ -208,18 +208,18 @@ a.cta-dropbox{
 
 
 /*inizio enterprise section*/
-
-.team-cta{
-    margin-bottom: 274px;
-    width: 100%;
+#enterprise{
+    padding-bottom: 105px;
+}
+.cta-contact-us{
+     margin-bottom: 134px;
+}
+.team-cta img{
+    width: 20px;
 }
 .team-enterprise{
     text-align: center;
     border: 0.5px solid grey;
-}
-
-#float-right{
-    float: right;
 }
 .enterprise-cta{
     border-bottom: 0.5px solid grey;
@@ -229,43 +229,47 @@ a.cta-dropbox{
 .enterprise-cta>.cta-dropbox{
     color: white;
     padding: 5px ;
-    margin-top: 10px;
     text-decoration: none;
     background-color: var(--button);
     margin-right: 20px;
 }
-
-.team-cta img{
-    width: 20px;
+.enterprise-cta h2{
+    margin-top: 0;
 }
-
-
-.enterprise{
-    height: 494px;
-    margin-bottom: 64px;
-}
-
-.cta-contact-us{
-     height: 106px;
-     background-color: pink;
-     margin-bottom: 90px;
-}
-.contact-us{
-    height: 298px;
+.img-contact img{
     width: 100%;
 }
-
+#float-right{
+    float: right;
+}
+.contact-us{
+    width: 100%;
+}
 .img-contact{
     width: 55%;
     float: left;
-    height: 298px;
-    background-color: darkred;
 }
 .text-contact{
     float: left;
     width: 45%;
-    height: 298px;
-    background-color: aqua;
+}
+
+.text-contact>h2{
+    margin: 42px 0 33px 50px;
+}
+
+.text-contact>p{
+    margin-left: 50px;
+    margin-bottom: 30px;
+
+}
+
+.text-contact>.partner-cta{
+    margin-left: 50px;
+    padding: 5px 0 5px 0;
+    border: 2px solid;
+    width: 147px;
+    text-align: center;
 }
 
 /*fine sesseione enterprise*/
