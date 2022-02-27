@@ -155,7 +155,7 @@ a.cta-dropbox{
 
 /*inizio choice section*/
 
-#choice{
+.choice{
     margin-bottom: 46px;
 }
 .find-plan>h2{
@@ -210,7 +210,7 @@ a.cta-dropbox{
 
 /*inizio enterprise section*/
 
-#enterprise{
+.enterprise{
     padding-bottom: 105px;
 }
 .cta-contact-us{
@@ -241,7 +241,7 @@ a.cta-dropbox{
 .img-contact img{
     width: 100%;
 }
-#float-right{
+.float-right{
     float: right;
 }
 .contact-us{
@@ -306,19 +306,11 @@ a.cta-dropbox{
 /*inizio sessione users*/
 
 .users{
-    height: 619px;
-    width: 100%;
-    background-color: grey;
-    margin-bottom: 77px;
+    margin-bottom: 120px;
 }
-
 .text-users{
-    height: 60px;
-    background-color: chartreuse;
-}
-.underline-users{
-    height: 60px;
-    background-color: rgb(184, 3, 145);
+    width: 60%;
+    margin: 0 auto;
 }
 .grid-users{
     height: 285px;
@@ -329,18 +321,46 @@ a.cta-dropbox{
     float: left;
     background-color: coral;
 }
-
 .small-users{
+    position: relative;
     float: left;
     width: 50%;
     height: 144px;
 }
+.small-users>img{
+    width: 90%;
+    position: absolute;
+    transform: translate(5%, 50%);
 
-.cta-users{
-    height: 214px;
-    width: 100%;
-    background-color: cornsilk;
 }
+.description-users>img{
+    width: 25%;
+    padding: 25px;
+}
+.description-users>hr{
+    width: 25%;
+    
+}
+.description-users>p{
+    margin-left: 25px;
+}
+.banner-cta{
+    background-color: var(--banner);
+}
+.cta-users{
+    width: 60%;
+    margin: 120px auto;
+}
+.cta-users>h2{
+    float: left;
+    margin: 0;
+}
+.cta-users>p{
+    margin:0;
+    padding: 10px 35px;
+    background-color: white;
+}
+
 /*da poter cancellare*/
 .small-users:nth-child(1){
     background-color: aqua;
@@ -354,25 +374,34 @@ a.cta-dropbox{
 .small-users:nth-child(4){
     background-color: darkgreen;
 }
-
 /*fine section users*/
 
+
+
+/*inizio faq section*/
+
 .faq{
-    height: 100%;
+    width: 60%;
     margin-bottom: 75px;
 }
 .text-faq{
     height: 23px;
     width: 100%;
-    margin-bottom: 30px;
-    background-color: chartreuse;
+    margin-bottom: 50px;
+
 }
-.esample-faq{
-    height: 219px;
-    background-color: coral;
+.esample-faq>h4{
+    padding: 40px 0;
+    border-top: 0.5px solid grey;
+}
+.esample-faq>h4:nth-child(4){
+    border-bottom: 0.5px solid grey;
 }
 
 /*fine del main*/
+
+
+/*inizio footer*/
 #footer_site{
     height: 100%;
     width: 100%;
@@ -381,10 +410,31 @@ a.cta-dropbox{
 .footer-voice{
     margin-bottom: 60px;
     padding-top: 60px;
-    height: 110px;
-    background-color: crimson;
+}
+table{
+
+    width:90%;
+    margin: 0 auto;
+    padding: 95px;
+}
+th{
+    color: white;
+    text-align: left;
+}
+td{
+    color: white;
 }
 .lenguage{
     height: 64px;
+    width: 76.5%;
+    margin: 0 auto;
+}
+.lenguage>hr{
+    width: 10%;
+    margin: 10px 0;
+}
 
+.lenguage>img{
+    width: 15px;
+    display: inline-block;
 }
