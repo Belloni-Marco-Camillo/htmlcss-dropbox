@@ -349,7 +349,8 @@ a.cta-dropbox{
 }
 .cta-users{
     width: 60%;
-    margin: 120px auto;
+    margin: 0 auto;
+    padding: 120px 0;
 }
 .cta-users>h2{
     float: left;
