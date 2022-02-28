@@ -7,19 +7,22 @@ body{
 }
 .container{
     width: 947px;
-    margin: 0 auto;
-    
+    margin: 0 auto; 
 }
 :root{
     --banner:#B4D0E7;
     --p: #09968D;
     --button:#0061FF;
     --img:#6E7831;
+    --h2-banner:#61082B;
 }
 .clearfix::after{
     content: "";
   clear: both;
   display: table;
+}
+.hide {
+    display: none;
 }
 
 /*classi speciali*/
@@ -31,40 +34,46 @@ body{
 #header_site{
     width: 100%;
 }
-ul{
+/*provvisorio*/
+.primary-menu{
+    display: none;
+}
+
+/*provvisorio*/
+.primary-menu ul{
     display: inline-block;
     line-height: 70px;
     margin-top: 0;
     vertical-align: top;
     margin-bottom: 0px;
 }
-li{
+.primary-menu li{
     display: inline-block;
 }
-.menu-dx{
+.primary-menu .menu-dx{
     
     width: 50%;
     float: left;
 }
-.menu-dx>img{
+.primary-menu .menu-dx>img{
     padding: 20px;
 }
-.menu-dx a{
+.primary-menu .menu-dx a{
     text-decoration: none;
     color: black;
     margin-right: 20px;
 }
-.menu-sx{
+.primary-menu .menu-sx{
     
     width: 50%;
     float: left;
     text-align: right;
 }
-.menu-sx>ul{
+.primary-menu .menu-sx>ul{
     padding-left: 0px;
     padding-right: 40px;
 }
-.menu-sx a{
+.primary-menu .menu-sx a{
     margin-right: 20px;
     display: inline-block;
     line-height: 70px;
@@ -73,12 +82,103 @@ li{
     text-decoration: none;
     color: black;
 }
-.menu-sx>a{
+.primary-menu .menu-sx>a{
     color: white;
     background-color: var(--button);
     line-height: 0;
     padding: 20px 30px;
     margin-top: 15px;
+}
+
+/*secondo menu*/
+.secondary-menu ul{
+    display: inline-block;
+    line-height: 28px;
+    margin: 0;
+    vertical-align: top;
+}
+.secondary-menu>.menu-dx>img{
+    width: 28px;
+    padding: 0;
+}
+.secondary-menu li, .mega-menu{
+    display: inline-block;
+}
+.secondary-menu .menu-dx{
+    width: 50%;
+    float: left;
+    height: 28px;
+}
+.secondary-menu .menu-dx a{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}
+.secondary-menu .menu-dx a:nth-child(3){
+   margin-left: 0px; 
+}
+.mega-menu{
+    float: left;
+  overflow: hidden;
+}
+/*provvisorio*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 30%;
+    left: 124px;
+    z-index: 1;
+  }
+
+  .mega-menu:hover .dropdown-content {
+    display: block;
+  }
+  .column {
+    float: left;
+    width: 33.33%;
+    height: 250px;
+  }
+  
+  .column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .column a:hover {
+    background-color: #ddd;
+  }
+/*provvisorio*/
+.secondary-menu .menu-sx{
+    
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+.secondary-menu .menu-sx>ul{
+    padding-right: 40px;
+}
+
+.secondary-menu .menu-sx a{
+    display: inline-block;
+    margin-top: 0;
+    vertical-align: top;
+    text-decoration: none;
+    color: black;
+}
+.secondary-menu .menu-sx>a{
+    color: white;
+    background-color: var(--button);
+    line-height: 28px;
+    margin-left: 15px;
+    padding: 0 30px;
+}
+.secondary-menu li>a{
+    margin-left: 40px;
 }
 
 /*fine header*/
@@ -93,6 +193,7 @@ li{
     margin: 0 auto;
     background-color:var(--banner);
     margin-bottom: 185px;
+    padding: 0;
 }
 .banner-contain{
     width: 85%;
@@ -158,21 +259,28 @@ a.cta-dropbox{
 .choice{
     margin-bottom: 46px;
 }
+.find-plan{
+    margin-bottom: 38px;
+}
 .find-plan>h2{
     font-size: 30px;
 }
 .usage-choice{
+    width: 230px;
     text-align: center;
     line-height: 40px;
     border-bottom: 1px solid grey;
 }
 .personal-choice, .standard-choice, .advanced-choice{
-    height: 990px;
+    height: 855px;
     width: 230px;
     float: left;
     margin-right: 44px;
     padding: 0 27px;
     border: 1px solid grey;
+}
+.plan-choice a{
+    color: var(--button);
 }
 .advanced-choice{
     margin-right: 0;
@@ -180,14 +288,17 @@ a.cta-dropbox{
 .personal-choice .cta-dropbox{
     margin: 10px;
     padding: 5px 15px;
+    color: white;
 }
 .standard-choice .cta-dropbox{
     margin: 10px;
     padding: 5px 15px;
+    color: white;
 }
 .advanced-choice .cta-dropbox{
     margin: 10px;
     padding: 5px 15px;
+    color: white;
 }
 .choice img{
     width: 20px;
@@ -222,18 +333,23 @@ a.cta-dropbox{
 .team-enterprise{
     text-align: center;
     border: 0.5px solid grey;
+    line-height: 30px;
+}
+.team-enterprise>img{
+    vertical-align: sub;
 }
 .enterprise-cta{
     border-bottom: 0.5px solid grey;
     border-left: 0.5px solid grey;
     border-right: 0.5px solid grey;;
+    padding: 0 20px;
 }
 .enterprise-cta>.cta-dropbox{
     color: white;
     padding: 5px ;
     text-decoration: none;
     background-color: var(--button);
-    margin-right: 20px;
+    margin-top: 3px;
 }
 .enterprise-cta h2{
     margin-top: 0;
@@ -265,9 +381,9 @@ a.cta-dropbox{
 }
 .text-contact>.partner-cta{
     margin-left: 50px;
-    padding: 5px 0 5px 0;
+    padding: 8px 0;
     border: 2px solid;
-    width: 147px;
+    width: 150px;
     text-align: center;
 }
 
@@ -295,8 +411,15 @@ a.cta-dropbox{
 .card-tools:nth-child(3){
     margin-right: 0;
 }
+.card-tools:nth-child(4){
+    margin-bottom: 0;
+}
+.card-tools:nth-child(5){
+    margin-bottom: 0;
+}
 .card-tools:nth-child(6){
     margin-right: 0;
+    margin-bottom: 0;
 }
 
 /*fine sessione tools*/
@@ -312,25 +435,27 @@ a.cta-dropbox{
     width: 60%;
     margin: 0 auto;
 }
-.grid-users{
-    height: 285px;
+.text-users>h2{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.text-users>p{
+    margin-bottom: 50px;
 }
 .colomn{
-    height: 288px;
     width: 33.333%;
     float: left;
-    background-color: coral;
 }
 .small-users{
     position: relative;
     float: left;
     width: 50%;
-    height: 144px;
+    height: 215px;
 }
 .small-users>img{
     width: 90%;
     position: absolute;
-    transform: translate(5%, 50%);
+    transform: translate(8%, 100%);
 
 }
 .description-users>img{
@@ -339,10 +464,12 @@ a.cta-dropbox{
 }
 .description-users>hr{
     width: 25%;
-    
+    margin-left:25px;
+    margin-bottom: 30px;
 }
 .description-users>p{
     margin-left: 25px;
+    margin-bottom: 50pxs;
 }
 .banner-cta{
     background-color: var(--banner);
@@ -355,6 +482,8 @@ a.cta-dropbox{
 .cta-users>h2{
     float: left;
     margin: 0;
+    color: var(--h2-banner);
+    font-size: 34px;
 }
 .cta-users>p{
     margin:0;
@@ -391,13 +520,33 @@ a.cta-dropbox{
     margin-bottom: 50px;
 
 }
-.esample-faq>h4{
-    padding: 40px 0;
-    border-top: 0.5px solid grey;
+.example-faq>div{
+    padding: 25px 0;
 }
-.esample-faq>h4:nth-child(4){
-    border-bottom: 0.5px solid grey;
+/*provvisorio*/
+.accordion:hover + .hide {
+    display: block;
+  }
+
+  .accordion {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-top: 1px solid grey;
+  }
+/*provvisorio*/
+
+summary {
+    cursor: pointer;
+} 
+summary > * {
+    display: inline;
 }
+
 
 /*fine del main*/
 
@@ -439,3 +588,4 @@ td{
     width: 15px;
     display: inline-block;
 }
+

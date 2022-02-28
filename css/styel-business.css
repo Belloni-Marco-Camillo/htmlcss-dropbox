@@ -1,0 +1,117 @@
+/*classi speciali*/
+body{
+    padding: 0;
+    box-sizing: border-box;
+    width: 1440Px;
+    margin: 0 auto;
+}
+.clearfix::after{
+    content: "";
+  clear: both;
+  display: table;
+}
+.container{
+    width: 610px;
+    margin: 0 auto;
+}
+/*fine classi speciali*/
+
+
+
+/*inizio header*/
+.menu{
+    line-height: 45px;
+}
+.menu-img{
+    float: left;
+}
+.menu-img>img{
+    vertical-align: middle;
+}
+.menu-voice{
+   line-height: 15px; 
+}
+.menu-voice ul{
+    float: right;
+}
+.menu-voice li{
+    list-style: none;
+    margin-left: 15px;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+li>a{
+    text-decoration: none;
+    color: black;
+}
+.menu-voice .banner{
+    border: 1px solid black;
+    padding: 4px 15px;
+}
+.hero-img>img{
+    width: 100%;
+}
+
+/*fine header*/
+
+
+
+/*inizio main*/
+
+/*inizio section partner*/
+
+.partner{
+    margin-bottom: 60px;
+}
+.grid-header{
+    min-height: 220px;
+}
+.col-sx{
+    float: left;
+    width: 50%;
+}
+.col-sx>h2{
+    margin: 25% 0;
+}
+.col-dx{
+    float: left;
+    width:50%;  
+}
+.col-dx>p{
+    margin: 25% 0;
+}
+.grid-body>img{
+    width: 100%;
+}
+.col-33{
+    width: 33.33%;
+    float: left;
+}
+.col-33>h4{
+    margin: 5px 0;
+}
+.col-33>h3{
+    margin: 5px 0;
+}
+
+/*fine section partener*/
+
+
+
+/*inizio section method*/
+
+.method{
+    padding-top: 70px;
+}
+.method li{
+    float: left;
+    list-style: none;
+    margin-right: 30px;
+}
+ul{
+    width: 100%;
+}
+.underline{
+    border: solid black;
+    border: 0 0 1px 0;
+}
